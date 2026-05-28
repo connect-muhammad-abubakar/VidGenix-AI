@@ -472,7 +472,7 @@ if not config.app.get("hide_config", False):
                 if st_llm_account_id:
                     config.app[f"{llm_provider}_account_id"] = st_llm_account_id
 
-        # 右侧面板 - API 密钥设置
+       # Right Panel - API Key Settings
         with right_config_panel:
 
             def get_keys_from_config(cfg_key):
@@ -489,20 +489,32 @@ if not config.app.get("hide_config", False):
 
             st.write(tr("Video Source Settings"))
 
+            # Pexels
             pexels_api_key = get_keys_from_config("pexels_api_keys")
             pexels_api_key = st.text_input(
                 tr("Pexels API Key"), value=pexels_api_key, type="password"
             )
             save_keys_to_config("pexels_api_keys", pexels_api_key)
 
+            # Pixabay
             pixabay_api_key = get_keys_from_config("pixabay_api_keys")
             pixabay_api_key = st.text_input(
                 tr("Pixabay API Key"), value=pixabay_api_key, type="password"
             )
             save_keys_to_config("pixabay_api_keys", pixabay_api_key)
 
+            # Coverr
+            coverr_api_key = get_keys_from_config("coverr_api_keys")
+            coverr_api_key = st.text_input(
+                tr("Coverr API Key"), value=coverr_api_key, type="password"
+            )
+            save_keys_to_config("coverr_api_keys", coverr_api_key)
+
+# --- End of expander section ---
+
 llm_provider = config.app.get("llm_provider", "").lower()
 panel = st.columns(3)
+# ... rest of your code
 left_panel = panel[0]
 middle_panel = panel[1]
 right_panel = panel[2]
