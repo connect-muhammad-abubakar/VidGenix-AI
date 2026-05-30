@@ -361,4 +361,3 @@ if __name__ == "__main__":
         voice_name="en-US-GuyNeural",
         voice_rate=1.0,
     )
-    start(task_id, params, stop_at="video")

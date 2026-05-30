@@ -5,7 +5,7 @@ video_source = "all"
 # API Keys (Multiple keys supported for rate-limit rotation)
 pexels_api_keys = []
 pixabay_api_keys = []
-coverr_api_keys = []
+coverr_api_key = []
 
 # LLM Provider
 llm_provider = "gemini"

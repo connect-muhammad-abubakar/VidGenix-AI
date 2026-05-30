@@ -1,31 +1,4 @@
-2026-05-29 22:10:40.548 | INFO     | app.config.config:load_config:23 - load config from file: /home/muhammad/VidGenixAI/config.toml
-2026-05-29 22:10:40.553 | INFO     | app.config.config:<module>:83 - MoneyPrinterTurbo v1.2.7
-[32m2026-05-29 22:10:40[0m | [1mINFO[0m | "./main.py:7":[34m <module>[0m - [1mstart server, docs: http://127.0.0.1:8080/docs[0m
-Traceback (most recent call last):
-  File "/home/muhammad/VidGenixAI/main.py", line 10, in <module>
-    uvicorn.run(
-  File "/home/muhammad/miniconda3/envs/VidGenixAI/lib/python3.10/site-packages/uvicorn/main.py", line 609, in run
-    config.load_app()
-  File "/home/muhammad/miniconda3/envs/VidGenixAI/lib/python3.10/site-packages/uvicorn/config.py", line 415, in load_app
-    return import_from_string(self.app)
-  File "/home/muhammad/miniconda3/envs/VidGenixAI/lib/python3.10/site-packages/uvicorn/importer.py", line 22, in import_from_string
-    raise exc from None
-  File "/home/muhammad/miniconda3/envs/VidGenixAI/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
-    module = importlib.import_module(module_str)
-  File "/home/muhammad/miniconda3/envs/VidGenixAI/lib/python3.10/importlib/__init__.py", line 126, in import_module
-    return _bootstrap._gcd_import(name[level:], package, level)
-  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
-  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
-  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
-  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
-  File "/home/muhammad/VidGenixAI/app/asgi.py", line 14, in <module>
-    from app.router import root_api_router
-  File "/home/muhammad/VidGenixAI/app/router.py", line 12, in <module>
-    from app.controllers.v1 import llm, video
-  File "/home/muhammad/VidGenixAI/app/controllers/v1/video.py", line 15, in <module>
-    from app.controllers.manager.redis_manager import RedisTaskManager
-  File "/home/muhammad/VidGenixAI/app/controllers/manager/redis_manager.py", line 4, in <module>
-    import redis
-ModuleNotFoundError: No module named 'redis'
+2026-05-30 10:27:34.588 | INFO     | app.config.config:load_config:23 - load config from file: /home/muhammad/VidGenixAI/config.toml
+2026-05-30 10:27:34.593 | INFO     | app.config.config:<module>:83 - MoneyPrinterTurbo v1.2.7
+[32m2026-05-30 10:27:34[0m | [1mINFO[0m | "./main.py:7":[34m <module>[0m - [1mstart server, docs: http://127.0.0.1:8080/docs[0m
+[32m2026-05-30 10:27:42[0m | [1mINFO[0m | "./app/asgi.py:82":[34m startup_event[0m - [1mstartup event[0m
